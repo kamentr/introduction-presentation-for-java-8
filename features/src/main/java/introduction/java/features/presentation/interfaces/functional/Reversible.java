@@ -1,10 +1,7 @@
 package introduction.java.features.presentation.interfaces.functional;
 
 @FunctionalInterface
-public interface CustomFunctionalInterface {
+public interface Reversible {
 
-    void printer(String textToPrint);
-
+    void reverse(String word);
 }
-
-

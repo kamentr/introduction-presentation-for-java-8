@@ -3,7 +3,7 @@ package introduction.java.features.presentation.interfaces.method;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DemoMain {
+public class InterfaceMethodsDemo {
 
     public static void main(String[] args) {
         WorkingPlace fsrWorkingPlace = new FsrTeam();
