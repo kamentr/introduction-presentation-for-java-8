@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Filters as expected filter objects
- * given a Predicate function
+ * Filter is the function which decides who gets to pass a given condition
+ * takes a Predicate<T>
  */
 public class Filter {
 
