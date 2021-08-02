@@ -2,6 +2,9 @@ package introduction.java.features.presentation.streams.parallel.helper;
 
 public class TimeIt {
 
+    private TimeIt() {
+    }
+
     public static void code(Runnable block) {
         long start = System.nanoTime();
 

@@ -10,10 +10,10 @@ import java.util.List;
 public class Filter {
 
     public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(4, 64, 9, 11, 3, 420);
+
         /* Imagine we need all the even numbers from a list of Integers to do some calculation on them
          * The imperative way would look something like this */
-
-        List<Integer> numbers = Arrays.asList(4, 64, 9, 11, 3, 420);
 
         /* Even though this is a simple example it is still
          * a bit hard to understand what is going on from a glance,
@@ -21,7 +21,7 @@ public class Filter {
          * from using "external iterator"
          * */
         for (Integer number : numbers) {
-            if (number % 2 == 1) {
+            if (number % 2 == 0) {
                 doSomeCalculation(number);
             }
         }
@@ -31,7 +31,7 @@ public class Filter {
          * This is called declarative style of programming
          * */
         numbers.stream()
-                .filter(number -> number % 2 == 1)
+                .filter(number -> number % 2 == 0)
                 .forEach(Filter::doSomeCalculation);
     }
 

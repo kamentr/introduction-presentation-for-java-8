@@ -6,5 +6,4 @@ public class FsrTeam implements WorkingPlace {
     public String getWorkingPlace() {
         return "We are from the FSR Team";
     }
-
 }

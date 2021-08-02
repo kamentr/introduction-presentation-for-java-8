@@ -18,7 +18,6 @@ public class InterfaceMethodsDemo {
         log.info(teamName);
     }
 
-
     /* Some notes:
     * - Constants in an interface (generally bad)
     *   - Exceptions:

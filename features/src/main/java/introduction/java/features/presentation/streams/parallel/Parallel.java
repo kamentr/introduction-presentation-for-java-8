@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
  */
 public class Parallel {
 
-
     /**
      * Parallelizing a block of code can make it run much faster
      */
@@ -24,13 +23,13 @@ public class Parallel {
 
         TimeIt.code(
                 () -> numbers.stream()
-                        .map(SlowMethod::OneSecond)
+                        .map(SlowMethod::oneSecond)
                         .collect(Collectors.toList())
         );
     }
 
     /*
-     * Just because we can does not mean we should!
+     * Just because we can, does not mean we should!
      *
      * Using parallel streams might be very fast for this particular piece of code
      * however the "parallelStream()" call initiates a lot of resources to be that fast.

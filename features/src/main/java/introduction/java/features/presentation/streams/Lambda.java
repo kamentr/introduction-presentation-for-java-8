@@ -50,7 +50,7 @@ public class Lambda {
         /* Nice!
          * Internal iterator
          * Get the pros from Polymorphism, call the implementation from the object itself
-         * The implementation details are hidden (as it should be)*/
+         * The implementation details are hidden (as it should be) */
         numbers.forEach((Integer number) -> System.out.println("Number: " + number));
 
         /* Java 8 has type inference (meaning the type of the parameter can be removed) */
