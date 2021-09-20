@@ -10,4 +10,9 @@ public class Person {
     private String name;
     private double weight;
     private int age;
+    private String preferredGenderPronoun;
+
+    public static boolean isJavaDeveloper(Person person) {
+        return true;
+    }
 }

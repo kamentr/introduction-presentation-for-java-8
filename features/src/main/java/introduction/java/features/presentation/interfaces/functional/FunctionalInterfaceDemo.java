@@ -50,27 +50,9 @@ public class FunctionalInterfaceDemo {
 
      */
 
-    public void functionalInterfacesInStreamsExample() {
-        List<User> users = getUsersFromSomewhere();
-
-        // the old way (eww)
-        users.removeIf(new Predicate<User>() {
-            @Override
-            public boolean test(User user) {
-                return user.isPasswordGenerated();
-            }
-        });
-
-        // the new way
-        users.removeIf(user -> {
-            return user.isPasswordGenerated();
-        });
-
-        // even better
-        users.removeIf(user -> user.isPasswordGenerated());
-
-        // the best <3
-        users.removeIf(User::isPasswordGenerated);
+    // Just a helper method
+    private static List<User> getUsersFromSomewhere() {
+        return Arrays.asList(new User(), new User());
     }
 
     /* -----------------------------------------------------------------------------
@@ -95,9 +77,26 @@ public class FunctionalInterfaceDemo {
        -----------------------------------------------------------------
 */
 
+    public void functionalInterfacesInStreamsExample() {
+        List<User> users = getUsersFromSomewhere();
 
-    // Just a helper method
-    private static List<User> getUsersFromSomewhere() {
-        return Arrays.asList(new User(), new User());
+        // the old way (eww)
+        users.removeIf(new Predicate<User>() {
+            @Override
+            public boolean test(User user) {
+                return user.isPasswordGenerated();
+            }
+        });
+
+        // the new way
+        users.removeIf(user -> {
+            return user.isPasswordGenerated();
+        });
+
+        // even better
+        users.removeIf(user -> user.isPasswordGenerated());
+
+        // the best <3
+        users.removeIf(User::isPasswordGenerated);
     }
 }
