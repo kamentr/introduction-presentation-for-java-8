@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 
 import static org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 
-public class FunctionalInterfaceDemo {
+public class FunctionalInterfaces {
     /*
 
             * Functional Interfaces are interfaces which represent some functionality

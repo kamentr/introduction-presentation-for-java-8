@@ -1,7 +1,9 @@
 package introduction.java.features.presentation.interfaces.functional;
 
-@FunctionalInterface
-public interface Reversible {
+@SuppressWarnings("ALL")
 
-    void reverse(String word);
+@FunctionalInterface
+public interface Runnable {
+
+    void run();
 }

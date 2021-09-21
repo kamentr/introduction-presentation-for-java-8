@@ -1,9 +1,9 @@
 package introduction.java.features.presentation.interfaces.method;
 
-public class FsrTeam implements WorkingPlace {
+public class FsrTeam implements EmixisTeam {
 
     @Override
-    public String getWorkingPlace() {
-        return "We are from the FSR Team";
+    public String getTeamName() {
+        return "FSR Team";
     }
 }

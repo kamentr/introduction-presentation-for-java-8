@@ -6,15 +6,15 @@ import lombok.extern.slf4j.Slf4j;
 public class InterfaceMethodsDemo {
 
     public static void main(String[] args) {
-        WorkingPlace fsrWorkingPlace = new FsrTeam();
-        WorkingPlace liveTeamWorkingPlace = new LiveTeam();
+        EmixisTeam fsrTeam = new FsrTeam();
+        EmixisTeam liveTeamTeam = new LiveTeam();
 
         // Default methods
-        log.info(fsrWorkingPlace.getWorkingPlace());
-        log.info(liveTeamWorkingPlace.getWorkingPlace());
+        log.info(fsrTeam.getTeamName());
+        log.info(liveTeamTeam.getTeamName());
 
         // Static methods
-        String teamName = WorkingPlace.getTeamName();
+        String teamName = EmixisTeam.getProjectName();
         log.info(teamName);
     }
 
