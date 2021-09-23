@@ -6,6 +6,7 @@ import java.util.function.Predicate;
 
 import static org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 
+@SuppressWarnings("ALL")
 public class FunctionalInterfaces {
     /*
 
@@ -51,9 +52,6 @@ public class FunctionalInterfaces {
      */
 
     // Just a helper method
-    private static List<User> getUsersFromSomewhere() {
-        return Arrays.asList(new User(), new User());
-    }
 
     /* -----------------------------------------------------------------------------
 
@@ -76,11 +74,10 @@ public class FunctionalInterfaces {
        Consumer<T>             void accept(T t)      System.out::println
        -----------------------------------------------------------------
 */
-
     public void functionalInterfacesInStreamsExample() {
         List<User> users = getUsersFromSomewhere();
 
-        // the old way (eww)
+        // Тhe old way (eww)
         users.removeIf(new Predicate<User>() {
             @Override
             public boolean test(User user) {
@@ -88,15 +85,19 @@ public class FunctionalInterfaces {
             }
         });
 
-        // the new way
+        // Тhe new way
         users.removeIf(user -> {
             return user.isPasswordGenerated();
         });
 
-        // even better
+        // Еven better
         users.removeIf(user -> user.isPasswordGenerated());
 
-        // the best <3
+        // Тhe best <3
         users.removeIf(User::isPasswordGenerated);
+    }
+
+    private static List<User> getUsersFromSomewhere() {
+        return Arrays.asList(new User(), new User());
     }
 }

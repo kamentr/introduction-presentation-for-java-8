@@ -8,10 +8,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Map transforms values
- * The number of input elements = the number of output elements
- * No guarantee of the Type of the output with respect to the type of the input
- * Map takes a Function<T, R> and returns Stream<R>
+ * Map transforms values.
+ * The number of input elements = the number of output elements.
+ * No guarantee of the type of the output with respect to the type of the input
+ * Map takes a Function<T, R> and returns Stream<R>, where T is the input type and R is the result type
  */
 public class Map {
 

@@ -25,7 +25,7 @@ public class InfiniteStreams {
     }
 
     private static void howAreInfiniteStreamsUseful() {
-        // Given a number k, and a count n, find the total of double of n
+        // Given a number k, and a count n, find the total of the double of n
         // even numbers starting with k, where sqrt of each number is > 20
 
         int k = 121;
